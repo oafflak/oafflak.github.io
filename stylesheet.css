@@ -1,0 +1,78 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 18px;
+}
+
+header {
+    background-color: rgb(255, 244, 219);
+    text-align: end;
+    padding: 17px 20px;
+}
+
+header > a {
+    text-decoration: none;
+    padding-left: 15px;
+    color: black;
+    font-size: large;
+    font-weight: 400;
+}
+header > a:hover {
+    text-decoration: underline blue;
+    color: blue;
+}
+
+div.form {
+    display: block;
+    text-align: center;
+    /* background-color: darkcyan; */
+}
+
+form {
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+/* Removes outline on text field */
+.txt {
+    border: solid 2px rgba(40, 40, 255, 0.705);
+    border-radius: 28px;
+    padding: 15px 20px;
+    width: 80%;
+    max-width: 700px;
+    font-size: 20px;
+}
+
+.txt:hover {
+    box-shadow: 0px 0px 3px blue;
+}
+
+input:focus {
+    border: solid 2px rgba(48, 48, 255, 0.74);
+    outline: none;
+
+}
+
+.txtfield {
+    display: block;
+    align-content: center;
+    text-align: center;
+    /* background-color: darkgreen; */
+    padding-bottom: 10px;
+}
+
+.btn {
+    border: none;
+    border-radius: 7px;
+    color: rgb(41, 41, 41);
+    background-color: rgb(235, 235, 235);
+    padding: 9px;
+    margin: 2px 9px;
+    font-size: large;
+}
+
+.btn:hover {
+    box-shadow: 0px 0px 2px rgb(122, 122, 122);
+    color: black;
+}

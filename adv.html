@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+    </head>
+    <link rel="stylesheet" href="stylesheet.css">
+    <style>
+        div.hint {
+            display: inline-block;
+            width: 250px;
+            padding-bottom: 20px;
+        }
+
+        div.hint > p {
+            display: inline;
+            font-size: large;
+        }
+
+        .txtas {
+            padding: 6px 12px;
+            font-size: large;
+            width: 50%;
+        }
+
+        .txtas:focus {
+            box-shadow: blue;
+        }
+
+        .btn-as {
+            background-color: cornflowerblue;
+            color: white;
+            border: none;
+            padding: 9px 12px;
+            font-size: large;
+        }
+
+        .btn-as:hover {
+            box-shadow: 0 0 2px rgb(0, 0, 65);
+        }
+    </style>
+    <body>
+        <header>
+            <a href="index.html">Go Back</a>
+            <a href="image.html">Image Search</a>
+        </header>
+        <h1>Welcome!</h1>
+        <p>Search for <strong>links with more advanced options</strong> on Google.</p>
+        <form action="http://google.com/search">
+            <h3>Find pages with...</h3>
+
+            <div class="hint">
+                <p>all these words:</p>
+            </div>
+            <input class="txtas" type="text" name="as_q"><br>
+            
+            <div class="hint">
+                <p>this exact word or phrase:</p>
+            </div>
+            <input class="txtas" type="text" name="as_epq"><br>
+            
+            <div class="hint">
+                <p>any of these words:</p>
+            </div>
+            <input class="txtas" type="text" name="as_oq"><br>
+            
+            <div class="hint">
+                <p>none of these words:</p>
+            </div>
+            <input class="txtas" type="text" name="as_eq"><br>
+
+            <input class="btn-as" type="submit" value="Search">
+        </form>
+    </body>
+</html>
